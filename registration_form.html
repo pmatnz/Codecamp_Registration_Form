@@ -31,7 +31,22 @@
         </fieldset>
         
         <fieldset>
-            <label> <input type="file"/> </label
+            <label for="profile=picture"> <input type="file" id="profile-picture"/>Upload a profile picture </label>
+            <label for="age">Input your age (years): <input type="number" min="13" max="'120" id="age"></input> </label>
+            <!--using type number and min and max this tops anything being entered outside of these numbers-->
+            <labe for="referrer">How did you hear about ?
+            <select id="referrer">
+                <option value="">(Select one)</option>
+                <option value="1">Freecodecap News</option>
+                <option value="2">Freecodecamp Youtube Channel</option>
+                <option value="3">Freecodecamp forum</option>
+                <option value="4">Other</option>
+                <!--value option should be the same as the text as this is what will get sent to the service to indentify the users selection-->
+            </select>
+            </label>
+            <!--Select element is used to create dropdown lists, known as "Select Box", adding options element inside it gives x amount of choices depending on how many option elements are used-->
+            <label for="bio">Provide more information about your self<textarea id="bio" rows="3" cols="30"></textarea></label>
+            <!--text area element provides multiple lines for the user to add input. can also add rows an cols attributes to make the text box larger-->
         </fieldset>
 
     </form>
