@@ -13,10 +13,10 @@
     <form action="https://register-demo.freecodecamp.org" method="post">
         
         <fieldset>
-            <label for="first-name">Enter Your First Name: <input id="first-name" type="text" required/> </label>
-            <label for="last-name">Enter Your Last Name: <input for="last-name" type="text" required/> </label>
-            <label for="email">Enter Your Email: <input id="email" type="email" required/>  </label>
-            <label for="new-password">Create a New Password: <input id="new-password" type="password" pattern="[a-z0-5]{8,}" required/> </label>
+            <label for="first-name">Enter Your First Name: <input id="first-name" type="text" name="first-name" required/> </label>
+            <label for="last-name">Enter Your Last Name: <input for="last-name" type="text" name="last-name" required/> </label>
+            <label for="email">Enter Your Email: <input id="email" type="email" name="email" required/>  </label>
+            <label for="new-password">Create a New Password: <input id="new-password" type="password" pattern="[a-z0-5]{8,}" name="password" required/> </label>
             <!--adding for attribute links the label with the input field, the id attribute helps link these makibg 
                 them unique, inputs also need a type for the form eg text, password, email etc etc-->
             <!--don't forget to add the "Required" to each input or uses will be able to submit without entering any data-->
@@ -26,16 +26,16 @@
         <fieldset>
             <label for="Personal-Account"> <input type="radio" name="account-type" id="Personal-Account"/> Personal Account </label>
             <label for="Business-Account"> <input type="radio" name="account-type" id="Business-Account"/> Business Account </label>
-            <label for="terms-and-conditions"><input type='checkbox' required id="terms-and-conditions"/>I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and conditions</a> </label>
+            <label for="terms-and-conditions"><input type="checkbox" required id="terms-and-conditions" name="terms"/>I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and conditions</a> </label>
             <!--Don't forget to link the elements with "for" and "id" attributes-->
         </fieldset>
         
         <fieldset>
-            <label for="profile=picture"> <input type="file" id="profile-picture"/>Upload a profile picture </label>
-            <label for="age">Input your age (years): <input type="number" min="13" max="'120" id="age"></input> </label>
+            <label for="profile=picture"> <input type="file" id="profile-picture" name="file"/>Upload a profile picture </label>
+            <label for="age">Input your age (years): <input type="number" min="13" max="'120" id="age" name="age"/>  </label>
             <!--using type number and min and max this tops anything being entered outside of these numbers-->
-            <labe for="referrer">How did you hear about ?
-            <select id="referrer">
+            <label for="referrer">How did you hear about ?
+            <select id="referrer" name="referrer">
                 <option value="">(Select one)</option>
                 <option value="1">Freecodecap News</option>
                 <option value="2">Freecodecamp Youtube Channel</option>
@@ -45,8 +45,9 @@
             </select>
             </label>
             <!--Select element is used to create dropdown lists, known as "Select Box", adding options element inside it gives x amount of choices depending on how many option elements are used-->
-            <label for="bio">Provide more information about your self<textarea id="bio" rows="3" cols="30"></textarea></label>
-            <!--text area element provides multiple lines for the user to add input. can also add rows an cols attributes to make the text box larger-->
+            <label for="bio" name="bio">Provide more information about your self<textarea id="bio" rows="3" cols="30" placeholder="Let us know more about you"></textarea></label>
+            <!--text area element provides multiple lines for the user to add input. can also add rows an cols attributes to make the text box larger. Add a placeholder attribute
+            to add some text to the box to give the user an idea of what information to add-->
         </fieldset>
 
     </form>
