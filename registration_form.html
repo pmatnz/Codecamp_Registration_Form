@@ -24,12 +24,16 @@
         </fieldset>
         
         <fieldset>
-            <label> <input type="radio" name="account-type"/> Personal Account </label>
-            <label> <input type="radio" name="account-type"/> Business Account </label>
-            <label> <input type='checkbox'/>I accept the terms and conditions </label>
-
+            <label for="Personal-Account"> <input type="radio" name="account-type" id="Personal-Account"/> Personal Account </label>
+            <label for="Business-Account"> <input type="radio" name="account-type" id="Business-Account"/> Business Account </label>
+            <label for="terms-and-conditions"><input type='checkbox' required id="terms-and-conditions"/>I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and conditions</a> </label>
+            <!--Don't forget to link the elements with "for" and "id" attributes-->
         </fieldset>
-        <fieldset></fieldset>
+        
+        <fieldset>
+            <label> <input type="file"/> </label
+        </fieldset>
+
     </form>
     <!--Form element requres a method which will be GET or POST , this dictates how the form data is sent to the URL--> 
 
