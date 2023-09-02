@@ -24,5 +24,56 @@ between the lines as the size of the font*/
 }
 
 
+h1,p {
+    margin: 1em auto;
+    text-align: center;
+}
 
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    /* The above margin measurements will centre the form*/
+}
 
+fieldset{
+    border:0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    /* To remove padding set value to 0 not none*/
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: red;
+}
+
+fieldset:last-of-type{
+    border-bottom: none;
+    /*You can use "last-of-type" to select the last type of element in an HTML file eg p:last-of-type{}*/
+}
+
+input,textarea,select{
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.inline {
+    width:unset;
+    margin: 0 0.5em 0 0;
+    /* instead of adding every margin you can just use 4 numbers, clock wide top,right, bottom, left 0 2 5 0*/
+    vertical-align: middle;
+}
+
+input,textarea {
+    background-color: white;
+    border: 1px solid orange;
+    /* each property can actually have more than one attribute, em is equal to the font size, 
+    2em would be twice the font size*/
+    min-height: 2em;
+    
+}
